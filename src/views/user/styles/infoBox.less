@@ -1,0 +1,57 @@
+// 信息展示列表样式
+.infoBox {
+  padding-bottom: 30px;
+
+  h4 {
+    font-weight: 700;
+    padding: 0 0 10px;
+    font-size: 15px;
+  }
+  ul {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  }
+  li {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    height: 40px;
+    line-height: 40px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    .title {
+      width: 160px;
+      text-align: right;
+      background-color: #eee;
+      padding-right: 10px;
+    }
+    .content {
+      padding-left: 20px;
+    }
+  }
+
+  &.info {
+    li {
+      .content {
+        padding-left: 20px;
+      }
+    }
+  }
+  &.time {
+    li {
+      .content {
+        padding-left: 0;
+        flex: 1;
+        display: flex;
+
+        .timeContent {
+          flex: 1;
+          border-right: 1px solid #ddd;
+          height: 100%;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}

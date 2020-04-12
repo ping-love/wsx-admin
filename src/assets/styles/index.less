@@ -1,0 +1,25 @@
+@import './reset.less';
+@import './variables.less';
+@import './mixin.less';
+@import './transition.less';
+@import './element-ui.less';
+@import './sidebar.less';
+
+#app {
+  height: 100%;
+  min-width: 1100px;
+
+  .app-main {
+    background-color: @bgColor;
+
+    & > div {
+      padding: 15px;
+      height: 100%;
+      overflow: auto;
+    }
+  }
+}
+
+.v-print {
+  width: 1000px;
+}
